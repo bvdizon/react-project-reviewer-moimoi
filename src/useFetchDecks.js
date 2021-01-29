@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const gsheetID = '14WygMRnGA3QWRDYvPOGTWGWNH68cUyOUE2VYumS0NUo';
-const gsheetNum = '1';
+const gsheetNum = '2';
 const url = `https://spreadsheets.google.com/feeds/list/${gsheetID}/${gsheetNum}/public/values?alt=json`;
 
 const useFetchDecks = () => {
