@@ -1,3 +1,6 @@
+:root {
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,124 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #433fa6;
+  color: #24225a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.underline {
+  height: 5px;
+  width: 60%;
+  background-color: #253f65;
+  margin: 0 auto;
+}
+.card {
+  /* background-color: green; */
+  height: 500px;
+  margin: 0 auto;
+  padding: 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  font-size: 30px;
+}
+
+.card h3 {
+  font-size: 28px;
+}
+
+.buttons {
+  font-size: 15px;
+}
+
+.buttons button:nth-child(1),
+.buttons button:nth-child(3) {
+  background-color: #615cf3;
+  color: #fff;
+  font-size: 15px;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #24225a;
+  color: #fff;
+  font-size: 15px;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards nav {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.cards nav button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 0;
+  border: none;
+  background-color: #615cf3;
+}
+
+.cards nav button:focus {
+  outline: none;
+}
+
+.cards nav button a {
+  color: #fff;
+}
+
+.decks {
+  /* background-color: red; */
+  padding: 30px;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.decks a {
+  text-decoration: none;
+  padding: 20px 15px;
+  display: block;
+  margin: 10px;
+  min-width: 100px;
+  line-height: 0;
+  color: #fff;
+  background-color: #615cf3;
 }
